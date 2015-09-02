@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+  
+  <TerrainDef>
+    <defName>Mud</defName>
+    <label>mud</label>
+    <texturePath>Terrain/Surfaces/Mud</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>330</RenderPrecedence>
+    <PathCost>12</PathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>0</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>Marsh</defName>
+    <label>marsh</label>
+    <texturePath>Terrain/Surfaces/Marsh</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>325</RenderPrecedence>
+    <PathCost>23</PathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>0</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+  </TerrainDef>
+  
+</TerrainDefs>

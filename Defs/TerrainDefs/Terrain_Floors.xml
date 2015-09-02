@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef Name="FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToMake>135</WorkToMake>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  <TerrainDef Name="FloorBaseSupport" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+    </affordances>
+    <statBases>
+      <WorkToMake>150</WorkToMake>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+  </TerrainDef>
+  
+  <TerrainDef Name="FloorBaseWater" Abstract="True">
+    <layerable>true</layerable>
+    <statBases>
+      <WorkToMake>170</WorkToMake>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+  
+  <!-- =========== Support ============ -->
+  
+  <TerrainDef  ParentName="FloorBaseSupport">
+    <DefName>WoodBoardFloor</DefName>
+    <label>Supported wood floor</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>Support wood plank flooring. For when you need to build over something.</Description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToMake>150</WorkToMake>
+    </statBases>
+    <CostList>
+      <WoodLog>5</WoodLog>
+    </CostList>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+	
+	<!-- ========== Sand ========== -->
+
+  <TerrainDef ParentName="FloorBase">
+    <DefName>SandFloor</DefName>
+    <label>sand floor</label>
+    <texturePath>Terrain/Surfaces/Sand</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>350</RenderPrecedence>
+    <Description>Sand.</Description>
+    <AcceptTerrainSourceFilth>False</AcceptTerrainSourceFilth>
+    <acceptFilth>false</acceptFilth>
+    <PathCost>4</PathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <ScatterType>SoftDry</ScatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthSand</TerrainFilthDef>
+    <Fertility>0.06</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+    <CostList>
+      <OmniSand>10</OmniSand>
+    </CostList>
+  </TerrainDef>
+ 
+	
+	<!-- =========== Soil =========== -->
+	<TerrainDef  ParentName="FloorBase">
+    <DefName>SoilFloor</DefName>
+    <label>soil floor</label>
+    <RenderPrecedence>340</RenderPrecedence>
+    <acceptFilth>false</acceptFilth>
+    <AcceptTerrainSourceFilth>False</AcceptTerrainSourceFilth>
+    <Description>Soil.</Description>
+    <texturePath>Terrain/Surfaces/Soil</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <PathCost>2</PathCost>
+    <ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+		<Fertility>1.0</Fertility>
+    <statBases>
+      <Beauty>0</Beauty>
+      <WorkToMake>25</WorkToMake>
+    </statBases>
+    <CostList>
+      <FreshCompost>10</FreshCompost>
+    </CostList>
+		<affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+  </TerrainDef>
+	
+	<!-- =========== Gravel ============ -->
+	<TerrainDef  ParentName="FloorBase">
+    <DefName>GravelFloor</DefName>
+    <label>gravel floor</label>
+    <RenderPrecedence>320</RenderPrecedence>
+    <Description>Gravel.</Description>
+    <acceptFilth>false</acceptFilth>
+    <AcceptTerrainSourceFilth>False</AcceptTerrainSourceFilth>
+    <texturePath>Terrain/Surfaces/Gravel</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <PathCost>2</PathCost>
+    <ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+		<Fertility>0.7</Fertility>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToMake>25</WorkToMake>
+    </statBases>
+    <CostList>
+      <FreshCompost>5</FreshCompost>
+      <OmniSand>5</OmniSand>
+    </CostList>
+		<affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+  </TerrainDef>
+	
+	<!-- =========== Mud ============ -->
+	<TerrainDef  ParentName="FloorBase">
+    <DefName>MudFloor</DefName>
+    <label>mud floor</label>
+    <RenderPrecedence>330</RenderPrecedence>
+    <Description>Mud.</Description>
+    <texturePath>Terrain/Surfaces/Mud</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <PathCost>12</PathCost>
+    <ScatterType>SoftDry</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+		<acceptFilth>false</acceptFilth>
+    <AcceptTerrainSourceFilth>False</AcceptTerrainSourceFilth>
+		<avoidWander>true</avoidWander>
+		<Fertility>0</Fertility>
+    <statBases>
+      <Beauty>0</Beauty>
+      <WorkToMake>25</WorkToMake>
+    </statBases>
+    <CostList>
+      <FreshCompost>5</FreshCompost>
+      <WaterBucket>5</WaterBucket>
+    </CostList>
+		<affordances>
+      <li>Light</li>
+    </affordances>
+  </TerrainDef>
+	
+	<!-- =========== Deep Water =========== -->
+	<TerrainDef  ParentName="FloorBaseWater">
+    <DefName>WaterDeepFloor</DefName>
+    <label>deep water floor</label>
+    <RenderPrecedence>395</RenderPrecedence>
+    <Description>Deep water.</Description>
+    <texturePath>Terrain/Surfaces/WaterDeep</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <PathCost>75</PathCost>
+		<AcceptTerrainSourceFilth>false</AcceptTerrainSourceFilth>
+		<avoidWander>true</avoidWander>
+		<TakeFootprints>false</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <statBases>
+      <Beauty>0</Beauty>
+      <WorkToMake>400</WorkToMake>
+    </statBases>
+    <CostList>
+      <WaterBucket>100</WaterBucket>
+    </CostList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </TerrainDef>
+	
+	<!-- ============ Shallow Water ============ -->
+	<TerrainDef  ParentName="FloorBaseWater">
+    <DefName>WaterShallowFloor</DefName>
+    <label>shallow water floor</label>
+    <RenderPrecedence>394</RenderPrecedence>
+    <Description>Shallow water.</Description>
+    <texturePath>Terrain/Surfaces/WaterShallow</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <PathCost>12</PathCost>
+		<AcceptTerrainSourceFilth>false</AcceptTerrainSourceFilth>
+		<avoidWander>true</avoidWander>
+		<TakeFootprints>false</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <statBases>
+      <Beauty>0</Beauty>
+      <WorkToMake>200</WorkToMake>
+    </statBases>
+    <CostList>
+      <WaterBucket>50</WaterBucket>
+    </CostList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+  
+	<!-- ============ Rough Sandstone ============ -->
+	<TerrainDef  ParentName="FloorBase">
+    <DefName>RoughSandstoneFloor</DefName>
+    <label>rough sandstone floor</label>
+    <RenderPrecedence>190</RenderPrecedence>
+    <Description>Sandstone eroded by the elements.</Description>
+    <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <PathCost>1</PathCost>
+    <ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <Fertility>0</Fertility>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToMake>25</WorkToMake>
+    </statBases>
+    <CostList>
+      <BlocksSandstone>15</BlocksSandstone>
+    </CostList>
+		<affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothableStone</li>
+    </affordances>
+    <Color>(126,104,94)</Color>
+    <smoothedTerrain>Sandstone_Smooth</smoothedTerrain>
+  </TerrainDef>
+  
+	<!-- ============= Rough Granite ============ -->
+	<TerrainDef  ParentName="FloorBase">
+    <DefName>RoughGraniteFloor</DefName>
+    <label>rough granite floor</label>
+    <RenderPrecedence>191</RenderPrecedence>
+    <Description>Granite eroded by the elements.</Description>
+    <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <PathCost>1</PathCost>
+    <ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <Fertility>0</Fertility>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToMake>25</WorkToMake>
+    </statBases>
+    <CostList>
+      <BlocksGranite>15</BlocksGranite>
+    </CostList>
+		<affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothableStone</li>
+    </affordances>
+    <Color>(105,95,97)</Color>
+    <smoothedTerrain>Granite_Smooth</smoothedTerrain>
+  </TerrainDef>
+  
+	<!-- ============ Rough Limestone ============ -->
+	<TerrainDef  ParentName="FloorBase">
+    <DefName>RoughLimestoneFloor</DefName>
+    <label>rough limestone floor</label>
+    <RenderPrecedence>192</RenderPrecedence>
+    <Description>Limestone eroded by the elements.</Description>
+    <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <PathCost>1</PathCost>
+    <ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <Fertility>0</Fertility>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToMake>25</WorkToMake>
+    </statBases>
+    <CostList>
+      <BlocksLimestone>15</BlocksLimestone>
+    </CostList>
+		<affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothableStone</li>
+    </affordances>
+    <Color>(158,153,135)</Color>
+    <smoothedTerrain>Limestone_Smooth</smoothedTerrain>
+  </TerrainDef>
+  
+	<!-- ============ Rough Slate ============ -->
+	<TerrainDef  ParentName="FloorBase">
+    <DefName>RoughSlateFloor</DefName>
+    <label>rough slate floor</label>
+    <RenderPrecedence>193</RenderPrecedence>
+    <Description>Slate eroded by the elements.</Description>
+    <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <PathCost>1</PathCost>
+    <ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <Fertility>0</Fertility>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToMake>25</WorkToMake>
+    </statBases>
+    <CostList>
+      <BlocksSlate>15</BlocksSlate>
+    </CostList>
+		<affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothableStone</li>
+    </affordances>
+    <Color>(70,70,70)</Color>
+    <smoothedTerrain>Slate_Smooth</smoothedTerrain> 
+  </TerrainDef>
+  
+	<!-- =========== Rough Marble ============= -->
+	<TerrainDef  ParentName="FloorBase">
+    <DefName>RoughMarbleFloor</DefName>
+    <label>rough marble floor</label>
+    <RenderPrecedence>194</RenderPrecedence>
+    <Description>Marble eroded by the elements.</Description>
+    <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <PathCost>1</PathCost>
+    <ScatterType>Rocky</ScatterType>
+		<TakeFootprints>True</TakeFootprints>
+    <constructEffect>ConstructDirt</constructEffect>
+    <Fertility>0</Fertility>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToMake>25</WorkToMake>
+    </statBases>
+    <CostList>
+      <BlocksMarble>15</BlocksMarble>
+    </CostList>
+		<affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothableStone</li>
+    </affordances>
+    <Color>(132,135,132)</Color>
+    <smoothedTerrain>Marble_Smooth</smoothedTerrain>
+  </TerrainDef>
+	
+</TerrainDefs>

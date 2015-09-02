@@ -1,0 +1,15 @@
+C:\Users\mjsku_000\Desktop\RimWorld857Win\Mods\NaturalFloors\Source\NaturalFloors\obj\Debug\NaturalFloors.csprojResolveAssemblyReference.cache
+C:\Users\mjsku_000\Desktop\RimWorld857Win\Mods\NaturalFloors\Source\NaturalFloors\bin\Debug\NaturalFloors.dll
+C:\Users\mjsku_000\Desktop\RimWorld857Win\Mods\NaturalFloors\Source\NaturalFloors\bin\Debug\NaturalFloors.pdb
+C:\Users\mjsku_000\Desktop\RimWorld857Win\Mods\NaturalFloors\Source\NaturalFloors\obj\Debug\NaturalFloors.dll
+C:\Users\mjsku_000\Desktop\RimWorld857Win\Mods\NaturalFloors\Source\NaturalFloors\obj\Debug\NaturalFloors.pdb
+C:\Users\mjsku_000\Desktop\RimWorld900WinDev\Mods\NaturalFloors\Source\NaturalFloors\bin\Debug\NaturalFloors.dll
+C:\Users\mjsku_000\Desktop\RimWorld900WinDev\Mods\NaturalFloors\Source\NaturalFloors\bin\Debug\NaturalFloors.pdb
+C:\Users\mjsku_000\Desktop\RimWorld900WinDev\Mods\NaturalFloors\Source\NaturalFloors\obj\Debug\NaturalFloors.csprojResolveAssemblyReference.cache
+C:\Users\mjsku_000\Desktop\RimWorld900WinDev\Mods\NaturalFloors\Source\NaturalFloors\obj\Debug\NaturalFloors.dll
+C:\Users\mjsku_000\Desktop\RimWorld900WinDev\Mods\NaturalFloors\Source\NaturalFloors\obj\Debug\NaturalFloors.pdb
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\NaturalFloors\Source\NaturalFloors\bin\Debug\NaturalFloors.dll
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\NaturalFloors\Source\NaturalFloors\bin\Debug\NaturalFloors.pdb
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\NaturalFloors\Source\NaturalFloors\obj\Debug\NaturalFloors.csprojResolveAssemblyReference.cache
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\NaturalFloors\Source\NaturalFloors\obj\Debug\NaturalFloors.dll
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\NaturalFloors\Source\NaturalFloors\obj\Debug\NaturalFloors.pdb

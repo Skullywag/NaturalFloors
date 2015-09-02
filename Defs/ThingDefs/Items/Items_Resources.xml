@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+  <!-- =========== bases =========== -->
+
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+  <ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+  <!--=============== Pure stuffs: Basics ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>WaterBucket</defName>
+    <label>water</label>
+    <description>All living things depend on this for life.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/WaterBucket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>
+    <soundInteract>Food_Drop</soundInteract>
+    <soundDrop>Food_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.1</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>OmniSand</defName>
+    <label>sand</label>
+    <description>Fine grains of silicon and other minerals.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Sand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>
+    <soundInteract>Food_Drop</soundInteract>
+    <soundDrop>Food_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.1</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>FreshCompost</defName>
+    <label>Compost</label>
+    <description>A mass of biodegradeable stuff.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Compost</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>
+    <soundInteract>Food_Drop</soundInteract>
+    <soundDrop>Food_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.1</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+  </ThingDef>
+  
+</Resources>

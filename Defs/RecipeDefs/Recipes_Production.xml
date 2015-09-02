@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef>
+    <defName>MakeSand</defName>
+    <label>Make sand</label>
+    <description>Make sand.</description>
+    <jobString>Making sand.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneChunks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <OmniSand>100</OmniSand>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>CollectWater</defName>
+    <label>Collect water</label>
+    <description>Collect water (requires wood for a bucket).</description>
+    <jobString>Collecting water.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <recipeUsers>
+      <li>Well</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <WaterBucket>5</WaterBucket>
+    </products>
+  </RecipeDef>
+
+</RecipeDefs>
