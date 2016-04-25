@@ -46,6 +46,9 @@
             <li>FoodRaw</li>
             <li>Corpses</li>
           </categories>
+          <specialFiltersToAllow> 
+            <li>AllowRotten</li>
+          </specialFiltersToAllow> 
         </filter>
       </fixedStorageSettings>
     </building>

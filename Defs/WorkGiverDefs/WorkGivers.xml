@@ -12,7 +12,9 @@
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
-    <singleBillGiverDef>Well</singleBillGiverDef>
+    <fixedBillGiverDefs>
+      <li>Well</li>
+     </fixedBillGiverDefs>
   </WorkGiverDef>
 
 </WorkGivers>
