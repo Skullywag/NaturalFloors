@@ -47,8 +47,8 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <resourceReadoutPriority>First</resourceReadoutPriority>
-    <soundInteract>Food_Drop</soundInteract>
-    <soundDrop>Food_Drop</soundDrop>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
     <statBases>
       <MarketValue>0.1</MarketValue>
       <MaxHitPoints>100</MaxHitPoints>
@@ -69,8 +69,8 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <resourceReadoutPriority>First</resourceReadoutPriority>
-    <soundInteract>Food_Drop</soundInteract>
-    <soundDrop>Food_Drop</soundDrop>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
     <statBases>
       <MarketValue>0.1</MarketValue>
       <MaxHitPoints>100</MaxHitPoints>
@@ -91,8 +91,8 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <resourceReadoutPriority>First</resourceReadoutPriority>
-    <soundInteract>Food_Drop</soundInteract>
-    <soundDrop>Food_Drop</soundDrop>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
     <statBases>
       <MarketValue>0.1</MarketValue>
       <MaxHitPoints>100</MaxHitPoints>

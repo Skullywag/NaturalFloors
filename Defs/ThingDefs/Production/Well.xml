@@ -20,7 +20,7 @@
       <li>Stony</li>
     </stuffCategories>
     <costStuffCount>50</costStuffCount>
-    <AltitudeLayer>Waist</AltitudeLayer>
+    <AltitudeLayer>Building</AltitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>

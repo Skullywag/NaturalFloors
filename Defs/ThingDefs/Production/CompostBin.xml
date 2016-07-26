@@ -26,7 +26,7 @@
       <li>Woody</li>
     </stuffCategories>
     <costStuffCount>100</costStuffCount>
-    <AltitudeLayer>Waist</AltitudeLayer>
+    <AltitudeLayer>Building</AltitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>

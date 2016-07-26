@@ -17,21 +17,6 @@
     <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </TerrainDef>
-
-  <TerrainDef Name="FloorBaseSupport" Abstract="True">
-    <layerable>true</layerable>
-    <affordances>
-      <li>Light</li>
-      <li>Heavy</li>
-    </affordances>
-    <statBases>
-      <WorkToMake>150</WorkToMake>
-    </statBases>
-    <designationCategory>Floors</designationCategory>
-    <Fertility>0</Fertility>
-    <constructEffect>ConstructDirt</constructEffect>
-    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
-  </TerrainDef>
   
   <TerrainDef Name="FloorBaseWater" Abstract="True">
     <layerable>true</layerable>
@@ -42,24 +27,6 @@
     <Fertility>0</Fertility>
     <constructEffect>ConstructDirt</constructEffect>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-  </TerrainDef>
-  
-  <!-- =========== Support ============ -->
-  
-  <TerrainDef  ParentName="FloorBaseSupport">
-    <DefName>WoodBoardFloor</DefName>
-    <label>Supported wood floor</label>
-    <RenderPrecedence>250</RenderPrecedence>
-    <Description>Support wood plank flooring. For when you need to build over something.</Description>
-    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
-    <statBases>
-      <Beauty>2</Beauty>
-      <WorkToMake>150</WorkToMake>
-    </statBases>
-    <CostList>
-      <WoodLog>5</WoodLog>
-    </CostList>
-    <constructEffect>ConstructWood</constructEffect>
   </TerrainDef>
 	
 	<!-- ========== Sand ========== -->
