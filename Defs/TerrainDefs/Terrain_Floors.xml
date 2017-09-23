@@ -158,7 +158,7 @@
     <label>deep water floor</label>
     <RenderPrecedence>395</RenderPrecedence>
     <Description>Deep water.</Description>
-    <texturePath>Terrain/Surfaces/WaterDeep</texturePath>
+    <texturePath>Terrain/Surfaces/WaterDeepRamp</texturePath>
     <EdgeType>FadeRough</EdgeType>
     <PathCost>75</PathCost>
 		<AcceptTerrainSourceFilth>false</AcceptTerrainSourceFilth>
@@ -181,7 +181,7 @@
     <label>shallow water floor</label>
     <RenderPrecedence>394</RenderPrecedence>
     <Description>Shallow water.</Description>
-    <texturePath>Terrain/Surfaces/WaterShallow</texturePath>
+    <texturePath>Terrain/Surfaces/WaterShallowRamp</texturePath>
     <EdgeType>FadeRough</EdgeType>
     <PathCost>12</PathCost>
 		<AcceptTerrainSourceFilth>false</AcceptTerrainSourceFilth>
