@@ -16,13 +16,13 @@ namespace NaturalFloors
             "Ice" //maybe remove?
         };
 
-        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 location, Rot4 rot, Thing thingToIgnore = null)
+        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 location, Rot4 rot, Map map, Thing thingToIgnore = null)
         {
             foreach (var current in GenRadial.RadialCellsAround(location, 5f, true))
             {
                 foreach (var waterSourceName in waterSourceNames)
                 {
-                    if (current.GetTerrain(Map) == TerrainDef.Named(waterSourceName))
+                    if (current.GetTerrain(map) == TerrainDef.Named(waterSourceName))
                     {
                         return true;
                     }

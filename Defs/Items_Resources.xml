@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Resources>
+<Defs>
 
 
   <!-- =========== bases =========== -->
@@ -61,7 +61,7 @@
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>OmniSand</defName>
+    <defName>omniSand</defName>
     <label>sand</label>
     <description>Fine grains of silicon and other minerals.</description>
     <graphicData>
@@ -83,7 +83,7 @@
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>FreshCompost</defName>
+    <defName>freshCompost</defName>
     <label>Compost</label>
     <description>A mass of biodegradeable stuff.</description>
     <graphicData>
@@ -104,4 +104,4 @@
     <stackLimit>75</stackLimit>
   </ThingDef>
   
-</Resources>
+</Defs>

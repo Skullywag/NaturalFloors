@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<RecipeDefs>
+<Defs>
 
   <RecipeDef>
     <defName>MakeSand</defName>
@@ -7,7 +7,7 @@
     <description>Make sand.</description>
     <jobString>Making sand.</jobString>
     <workAmount>1000</workAmount>
-    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+    <workSpeedStat>WorkSpeedGlobal</workSpeedStat>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.25</workSkillLearnFactor>
     <effectWorking>CutStone</effectWorking>
@@ -26,7 +26,7 @@
       </li>
     </ingredients>
     <products>
-      <OmniSand>100</OmniSand>
+      <omniSand>100</omniSand>
     </products>
     <fixedIngredientFilter>
       <categories>
@@ -66,4 +66,4 @@
     </products>
   </RecipeDef>
 
-</RecipeDefs>
+</Defs>

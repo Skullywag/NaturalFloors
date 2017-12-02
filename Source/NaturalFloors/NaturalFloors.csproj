@@ -31,26 +31,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\RimWorldWin_Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Building_Composter.cs" />
     <Compile Include="PlaceWorker_NearWater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Source-DLLs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\RimWorldWin_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\RimWorldWin_Data\Managed\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\..\RimWorldWin_Data\Managed\Mono.Security.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
