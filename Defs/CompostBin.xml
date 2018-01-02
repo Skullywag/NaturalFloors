@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
   <ThingDef Name="BuildingBase" Abstract="True">
     <category>Building</category>
@@ -13,10 +13,10 @@
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
-    <DefName>CompostBin</DefName>
+    <defName>CompostBin</defName>
     <label>compost bin</label>
-    <ThingClass>NaturalFloors.Building_Composter</ThingClass>
-    <Description>Helps speed up the composting process.</Description>
+    <thingClass>NaturalFloors.Building_Composter</thingClass>
+    <description>Helps speed up the composting process.</description>
     <graphicData>
       <texPath>Things/Buildings/CompostBin</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@
       <li>Woody</li>
     </stuffCategories>
     <costStuffCount>100</costStuffCount>
-    <AltitudeLayer>Building</AltitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
@@ -34,16 +34,15 @@
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
-    <Size>(1,1)</Size>
-    <DesignationCategory>Production</DesignationCategory>
-    <Passability>PassThroughOnly</Passability>
+    <size>(1,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <building>
       <fixedStorageSettings>
         <priority>Important</priority>
         <filter>
           <categories>
-            <li>FoodRaw</li>
             <li>Corpses</li>
           </categories>
           <specialFiltersToAllow> 
@@ -59,4 +58,4 @@
     <tickerType>Rare</tickerType>
   </ThingDef>
 
-</ThingDefs>
+</Defs>

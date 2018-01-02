@@ -1,28 +1,35 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using Verse;
-using RimWorld;
 namespace NaturalFloors
 {
     public class PlaceWorker_NearWater : PlaceWorker
     {
-        public bool water = false;
-        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot)
+        private readonly List<string> waterSourceNames = new List<string>()
         {
-            foreach (IntVec3 current in GenRadial.RadialCellsAround(loc, 5f, true))
+            "WaterDeep",
+            "WaterOceanDeep",
+            "WaterMovingDeep",
+            "WaterShallow",
+            "WaterOceanShallow",
+            "WaterMovingShallow",
+            "Marsh",
+            "Ice" //maybe remove?
+        };
+
+        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 location, Rot4 rot, Map map, Thing thingToIgnore = null)
+        {
+            foreach (var current in GenRadial.RadialCellsAround(location, 5f, true))
             {
-                if(current.GetTerrain() == TerrainDef.Named("WaterDeep") || current.GetTerrain() == TerrainDef.Named("WaterShallow") || current.GetTerrain() == TerrainDef.Named("Marsh"))
+                foreach (var waterSourceName in waterSourceNames)
                 {
-                    water = true;
-                }         
+                    if (current.GetTerrain(map) == TerrainDef.Named(waterSourceName))
+                    {
+                        return true;
+                    }
+                }
             }
-            if(water == false)
-            {
-                return new AcceptanceReport("Must be near water source.");
-            }
-            else
-            {
-                return true;
-            }
+
+            return "MustBeNearWaterSource".Translate();
         }
     }
 }
