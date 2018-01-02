@@ -5,7 +5,7 @@ namespace NaturalFloors
 {
     public class Building_Composter : Building_Storage
     {
-        private readonly Thing compost = ThingMaker.MakeThing(ThingDef.Named("FreshCompost"));
+        private readonly Thing compost = ThingMaker.MakeThing(ThingDef.Named("freshCompost"));
         private readonly DamageInfo damageInfo = new DamageInfo(DamageDefOf.Rotting, 1);
 
         public override void TickRare()
@@ -20,7 +20,7 @@ namespace NaturalFloors
             //Loop over things
             foreach (var thing in thingsInComposter.ToList())
             {
-                if (thing.def.category != ThingCategory.Item || thing.def.defName == "FreshCompost")
+                if (thing.def.category != ThingCategory.Item || thing.def.defName == "freshCompost")
                 {
                     continue;
                 }
